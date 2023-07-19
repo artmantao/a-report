@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Satisfaction Survey Report</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* 以下所有选择器都选中了 h1 元素 */
+    
+    /* 父到子选择器 —— 两级 id 选择器，优先级： 2-0-0 */
+    #container > #page-title { 
+      color: blue;  /* 蓝色 */
+    }
+    
+    /* 父到子选择器 —— 父： ID 选择器，子： class 选择器，优先级：1-1-0 */
+    #container > .main-title { 
+      color: red;  /* 红色 */
+    }
+    
+    /* 父到子选择器 —— 父： class 选择器，子： id 选择器，优先级：1-1-0 */
+    .main-content #page-title {
+      color: green; /* 绿色 */
+    }
+    
+    /* 父到子选择器 —— 父： class 选择器，子： class 选择器，优先级：0-2-0 */
+    .main-content .main-title {
+      color: navy; /* 海军蓝，深蓝 */
+    }
+    
+    /* id 选择器，优先级： 1-0-0 */
+    #page-title {
+      color: purple; /* 紫色 */
+    }
+    
+    /* class 选择器，优先级：0-1-0 */
+    .main-title {
+      color: teal; /* 蓝绿色 */
+    }
+    
+    /* 标签选择器，优先级：0-0-1 */
+    h1 {
+      color: aqua; /* 水蓝色 */
+    }
+    #container {
+        margin-top: 20px;
+    }
+    #page-title {
+        margin-top: 30px;
+    }
+    
+  </style>
+    </head>
+  <body>
+    <div id="container" class="main-content">
+      <h1 id="page-title" class="main-title">这是标题</h1>
+    </div>
+    <div style="height: 30px;background-color: blue;"></div>
+    <div style="margin-bottom: 200px;margin-top: 30px;"></div>
+    <div style="height: 30px;background-color: rgb(219, 85, 36);"></div>
+  </body>

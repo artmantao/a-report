@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.topic-img {
+    width: 100%;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+p {
+    line-height: 1.5;
+    font-size: 1.05rem;
+}
+.article-content {
+    padding: 0 1rem;
+}
+
+ul {
+    margin-left: 1rem;
+    line-height: 1.5;
+    font-size: 1.05rem;
+}
+
+.article-image {
+    width: 100%;
+}
+
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+table caption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+}
+th:first-child {
+    width: 40%;
+    border-right: 1px solid #999;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+
+@media screen and (min-width: 768px) {
+    .topic-img {
+        height: 350px;
+        object-fit: cover;
+        object-position: 0 35%; 
+    }
+    .article-content {
+        column-count: 2;
+        column-gap: 2em;
+        padding: 2em;
+    }
+    body {
+        background-color: #e3e3e3; 
+    }
+    .container {
+        background-color: #fff;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px; /* 圆角 */
+        box-shadow: 0 0 10px rgba(0,0,0,0.2); /* 阴影效果 */
+    }
+
+    h1 {
+        margin-top: 3rem;
+    }
+}
